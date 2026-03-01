@@ -8,162 +8,66 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
-body{
-font-family:'Poppins',sans-serif;
-background:#0f172a;
-color:white;
-overflow-x:hidden;
-}
+body{font-family:'Poppins',sans-serif;background:#0f172a;color:white;overflow-x:hidden}
 
 /* NAVBAR */
 nav{
-position:fixed;
-width:100%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 10%;
-background:rgba(15,23,42,0.8);
-backdrop-filter:blur(10px);
-z-index:1000;
-}
-nav h2{
-background:linear-gradient(90deg,#22c55e,#06b6d4);
--webkit-background-clip:text;
-color:transparent;
-font-weight:800;
-}
-nav ul{
-list-style:none;
-display:flex;
-gap:30px;
-}
-nav ul li a{
-text-decoration:none;
-color:#cbd5e1;
-font-weight:500;
-}
+position:fixed;width:100%;display:flex;justify-content:space-between;align-items:center;
+padding:20px 10%;background:rgba(15,23,42,0.85);backdrop-filter:blur(10px);z-index:1000}
+nav h2{background:linear-gradient(90deg,#22c55e,#06b6d4);
+-webkit-background-clip:text;color:transparent;font-weight:800}
+nav ul{list-style:none;display:flex;gap:30px}
+nav ul li a{text-decoration:none;color:#cbd5e1;font-weight:500}
 nav ul li a:hover{color:#22c55e}
 
 /* HERO */
 header{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-background:radial-gradient(circle at top right,#1e293b,#0f172a);
-}
-header h1{
-font-size:60px;
-font-weight:800;
-background:linear-gradient(90deg,#22c55e,#06b6d4);
--webkit-background-clip:text;
-color:transparent;
-}
-header p{
-margin-top:20px;
-max-width:650px;
-font-size:20px;
-color:#cbd5e1;
-}
-.btn{
-margin-top:30px;
-padding:14px 35px;
-background:linear-gradient(90deg,#22c55e,#06b6d4);
-border:none;
-border-radius:40px;
-font-size:16px;
-cursor:pointer;
-color:white;
-transition:0.3s;
-}
+height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;
+text-align:center;padding:20px;background:radial-gradient(circle at top right,#1e293b,#0f172a)}
+header h1{font-size:60px;font-weight:800;background:linear-gradient(90deg,#22c55e,#06b6d4);
+-webkit-background-clip:text;color:transparent}
+header p{margin-top:20px;max-width:700px;font-size:20px;color:#cbd5e1}
+.btn{margin-top:30px;padding:15px 40px;background:linear-gradient(90deg,#22c55e,#06b6d4);
+border:none;border-radius:40px;font-size:16px;cursor:pointer;color:white;transition:0.3s}
 .btn:hover{transform:scale(1.08)}
 
-section{
-padding:100px 10%;
-}
-.section-title{
-text-align:center;
-font-size:36px;
-margin-bottom:60px;
-}
+/* SECTIONS */
+section{padding:100px 10%}
+.section-title{text-align:center;font-size:38px;margin-bottom:60px}
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:40px;
-}
+/* GRID */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px}
 .card{
-background:rgba(255,255,255,0.05);
-padding:40px;
-border-radius:25px;
-backdrop-filter:blur(15px);
-border:1px solid rgba(255,255,255,0.1);
-transition:0.4s;
-}
-.card:hover{
-transform:translateY(-12px);
-border:1px solid #22c55e;
-}
-.card h3{
-margin-bottom:20px;
-font-size:24px;
-}
-.card p{
-color:#cbd5e1;
-line-height:1.8;
-}
+background:rgba(255,255,255,0.05);padding:40px;border-radius:25px;
+backdrop-filter:blur(15px);border:1px solid rgba(255,255,255,0.1);transition:0.4s}
+.card:hover{transform:translateY(-12px);border:1px solid #22c55e}
+.card h3{margin-bottom:20px;font-size:24px}
+.card p{color:#cbd5e1;line-height:1.8}
 
-.how{
-text-align:center;
-font-size:20px;
-color:#cbd5e1;
-line-height:2.5;
-}
+/* BENEFITS */
+.benefits p{color:#cbd5e1;font-size:18px;margin-bottom:20px;text-align:center}
 
-.contact{
-max-width:600px;
-margin:auto;
-}
+/* FAQ */
+.faq-item{margin-bottom:25px}
+.faq-item h4{margin-bottom:10px;color:#22c55e}
+.faq-item p{color:#cbd5e1}
+
+/* CONTACT */
+.contact{max-width:600px;margin:auto}
 input,textarea{
-width:100%;
-padding:15px;
-margin:12px 0;
-border-radius:15px;
-border:none;
-background:#1e293b;
-color:white;
-font-size:14px;
-}
+width:100%;padding:15px;margin:12px 0;border-radius:15px;border:none;
+background:#1e293b;color:white;font-size:14px}
 textarea{height:130px}
 
-footer{
-text-align:center;
-padding:50px;
-background:#020617;
-color:#94a3b8;
-}
+/* FOOTER */
+footer{text-align:center;padding:50px;background:#020617;color:#94a3b8}
 
+/* WHATSAPP */
 .whatsapp{
-position:fixed;
-bottom:25px;
-right:25px;
-background:#25D366;
-color:white;
-width:60px;
-height:60px;
-display:flex;
-align-items:center;
-justify-content:center;
-border-radius:50%;
-font-size:28px;
-text-decoration:none;
-box-shadow:0 5px 20px rgba(0,0,0,0.3);
-transition:0.3s;
-}
+position:fixed;bottom:25px;right:25px;background:#25D366;color:white;
+width:60px;height:60px;display:flex;align-items:center;justify-content:center;
+border-radius:50%;font-size:28px;text-decoration:none;
+box-shadow:0 5px 20px rgba(0,0,0,0.3);transition:0.3s}
 .whatsapp:hover{transform:scale(1.1)}
 
 @media(max-width:768px){
@@ -179,47 +83,60 @@ nav ul{display:none}
 <h2>AR AUTOMATION</h2>
 <ul>
 <li><a href="#services">Services</a></li>
-<li><a href="#how">How It Works</a></li>
+<li><a href="#benefits">Benefits</a></li>
+<li><a href="#faq">FAQ</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
 
 <header>
-<h1>Never Miss a Lead Again</h1>
-<p>AI Calling Agent & WhatsApp Automation that works 24/7 to capture and convert every business inquiry automatically.</p>
+<h1>AI Automation That Works 24/7</h1>
+<p>We build AI Calling Agents and WhatsApp Automation systems that capture every inquiry, respond instantly, and help businesses increase conversions automatically.</p>
 <button class="btn" onclick="document.getElementById('contact').scrollIntoView()">Book Free Demo</button>
 </header>
 
 <section id="services">
 <h2 class="section-title">Our Services</h2>
 <div class="grid">
-
 <div class="card">
 <h3>AI Calling Agent</h3>
-<p>
-24/7 automated call answering with human-like Hindi & English voice.
-Captures every inquiry and ensures no missed opportunities.
-Perfect for real estate, clinics & service businesses.
-</p>
+<p>Human-like AI voice answering calls 24/7. Handles customer queries, captures lead details, and ensures zero missed opportunities for your business.</p>
 </div>
-
 <div class="card">
 <h3>WhatsApp Automation</h3>
-<p>
-Instant auto-replies, smart follow-ups and admin email alerts.
-Every lead is captured automatically.
-</p>
+<p>Instant replies, follow-up automation, admin alerts, and smart lead capture system that converts WhatsApp inquiries into real customers.</p>
 </div>
-
+<div class="card">
+<h3>Lead Management System</h3>
+<p>Every call and message inquiry is properly recorded and organized so you never lose a potential client again.</p>
+</div>
 </div>
 </section>
 
-<section id="how">
-<h2 class="section-title">How It Works</h2>
-<div class="how">
-<p>1️⃣ We Set Up Your AI System</p>
-<p>2️⃣ AI Handles Calls & Messages 24/7</p>
-<p>3️⃣ Every Lead is Captured Automatically</p>
+<section id="benefits">
+<h2 class="section-title">Why Choose AR AUTOMATION?</h2>
+<div class="benefits">
+<p>✔ Never Miss a Lead Again</p>
+<p>✔ 24/7 Business Availability</p>
+<p>✔ Human-Like AI Interaction</p>
+<p>✔ Automated Follow-Ups</p>
+<p>✔ Increased Conversions & Revenue</p>
+</div>
+</section>
+
+<section id="faq">
+<h2 class="section-title">Frequently Asked Questions</h2>
+<div class="faq-item">
+<h4>Is the AI voice natural?</h4>
+<p>Yes. Our AI uses advanced human-like voice technology in Hindi and English.</p>
+</div>
+<div class="faq-item">
+<h4>Can it handle multiple calls?</h4>
+<p>Yes. AI can handle unlimited simultaneous calls without delay.</p>
+</div>
+<div class="faq-item">
+<h4>Is setup complicated?</h4>
+<p>No. We handle complete setup and deployment for your business.</p>
 </div>
 </section>
 
@@ -227,24 +144,21 @@ Every lead is captured automatically.
 <h2 class="section-title">Contact Us</h2>
 <div class="contact">
 <form action="https://formspree.io/f/mdalvazq" method="POST">
-
 <input type="text" name="name" placeholder="Your Name" required>
 <input type="text" name="phone" placeholder="Phone Number" required>
 <input type="text" name="business" placeholder="Business Type">
 <input type="text" name="city" placeholder="City">
 <textarea name="message" placeholder="Your Message"></textarea>
-
 <button class="btn" type="submit">Submit Inquiry</button>
-
 </form>
 </div>
 </section>
 
 <footer>
-© 2026 AR AUTOMATION | AI Business Automation Solutions
+2026 AR AUTOMATION ALL RIGHTS RESERVED
 </footer>
 
-<a href="https://wa.me/91YOURNUMBER" class="whatsapp" target="_blank">💬</a>
+<a href="https://wa.me/917091993879" class="whatsapp" target="_blank">💬</a>
 
 </body>
 </html>
